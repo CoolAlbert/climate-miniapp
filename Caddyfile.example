@@ -1,0 +1,10 @@
+climate.example.com {
+	reverse_proxy 127.0.0.1:8095
+}
+
+monitor.example.com {
+	basic_auth {
+		albert <bcrypt-password-hash>
+	}
+	reverse_proxy 127.0.0.1:4442
+}
