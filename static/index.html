@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+    <title>Климат дома</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="topbar">
+        <div>
+          <h1>Климат дома</h1>
+          <p id="updated">Обновление...</p>
+        </div>
+        <button id="refresh" class="icon-button" type="button" aria-label="Обновить данные" title="Обновить">
+          <span aria-hidden="true">↻</span>
+        </button>
+      </header>
+
+      <section id="summary" class="summary" aria-live="polite"></section>
+      <nav id="room-tabs" class="room-tabs" aria-label="Комнаты"></nav>
+      <section id="rooms" class="rooms" aria-live="polite"></section>
+      <section id="error" class="error" hidden></section>
+    </main>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="/app.js"></script>
+  </body>
+</html>
